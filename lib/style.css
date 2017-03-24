@@ -1,0 +1,511 @@
+/* reset -------------------------------------------- */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ul {
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:link {
+    color: blue
+}
+a:visited {
+    color: blue
+}
+
+/*共通*/
+
+body {
+ font-family: sans-serif;
+}
+
+header {
+ height: 140px;
+ border-bottom: rgb(204, 204, 204) solid 0.1px;
+}
+
+.header-box {
+  width: 950px;
+  height: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-box_upside {
+  height: 70px;
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  float: left;
+  width: 100px;
+  height: 66.5px;
+}
+
+
+/*検索窓のレイアウト*/
+dl.search{
+	position:relative;
+	background-color:#fff;
+	border:1px solid #aaa;
+	border-radius:6px;
+  width: 800px;
+  float: right;
+}
+dl.search dt{
+	padding:3px;
+}
+dl.search dt input{
+	width:800px;
+	height:30px;
+	line-height:30px;
+	background:none;
+	border:none;
+}
+dl.search dd{
+	position:absolute;
+	top:0;
+	right:0;
+}
+dl.search dd button{
+	display:block;
+	padding:6px;
+	background:none;
+	border:none;
+}
+dl.search dd button span{
+	display:block;
+	width:25px;
+	height:25px;
+	background:url('search.png') center center / cover no-repeat;
+}
+
+.header-box_downside {
+  display: flex;
+  flex: auto;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+}
+.category {
+  width: 500px;
+}
+
+a:link.menu {
+    float: right;
+    display:block;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 0 10px;
+    padding: 10px 10px;
+    background-color: rgb(223, 165, 123);
+    border-radius: 5px;
+
+}
+a:hover.menu {
+    color: #f00;
+}
+a:active.menu {
+    color: #00f;
+}
+a:visited.menu {
+    color: #fff;
+}
+p.menu {
+    float: right;
+    display:block;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(113, 115, 114);
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.default-user_img {
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+.content-container {
+  height: 2000px;
+  background-color: #F5F5F5;
+}
+.content {
+    margin-left : auto ;
+    margin-right : auto ;
+    width: 960px;
+    background-color: #fff;
+}
+
+.msg {
+    color: #FF0000;
+}
+
+.exhibit_button {
+  width: 100px;
+  height: 100px;
+  top: 700px;
+  left: 1250px;
+  position: fixed;
+  z-index: 1;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: rgb(223, 165, 123);
+  color: #fff;
+  border-style: none;
+
+   box-shadow: 2px 2px 3px 1px #666;
+
+   -moz-box-shadow: 2px 2px 3px 1px #666;
+
+   -webkit-box-shadow: 2px 2px 3px 1px #666;
+
+}
+
+a:hover.exhibit {
+    color: #f00;
+}
+button .exhibit {
+  color: #fff;
+}
+/* top page -------------------------------------------- */
+
+.item-list li {
+    float:left;
+    margin-top: 20px;
+    margin-left: 20px;
+    width:300px;
+}
+
+.item-list .item {
+    text-align: center;
+}
+
+.item-list .item-img{
+    width:300px;
+}
+
+.item-list .item-info{
+    margin-top: 5px;
+}
+
+.item-list .item-name {
+    float:left;
+}
+
+.item-list .item-price {
+    display:block;
+    float:right;
+}
+
+.item-list .cart-btn {
+    display:block;
+    clear:both;
+    margin:0 auto;
+    width:160px;
+    height:40px;
+    color: #ffffff;
+    font-size: 100%;
+    background-color: rgb(0, 190, 223);
+    border:none;
+}
+
+.item-list .sold-out{
+    clear:both;
+    height:40px;
+    color: #FF0000;
+    font-size: 1.2em;
+}
+
+/* cart, finish page -------------------------------------------- */
+
+.title {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.cart-list-title {
+    clear:both;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-list-title .cart-list-price{
+    margin-left: 700px;
+}
+
+.cart-list-title .cart-list-num {
+    margin-left: 150px;
+}
+
+.cart-list .cart-item {
+    clear:both;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-list .cart-item-img{
+    width:120px;
+}
+
+.cart-list .cart-item-name{
+    position: absolute;
+    margin-left: 30px;
+    width: 500px;
+}
+
+.cart-item-del{
+    display: inline;
+    position: absolute;
+    margin-left: 470px;
+}
+
+.cart-list .cart-item-price {
+    position: absolute;
+    margin-left: 560px;
+    color: #FF0000;
+}
+
+.cart-list .form_select_amount {
+    float:right;
+    margin-left: 50px;
+}
+
+.cart-list .cart-item-num {
+    width:100px;
+    height:30px;
+    font-size: 1.2em;
+}
+
+.buy-sum-box{
+    clear:both;
+    margin-top: 10px;
+}
+
+.buy-sum-box .buy-sum-title{
+    margin-left: 620px;
+}
+
+.buy-sum-box .buy-sum-price{
+    margin-left: 30px;
+    font-size: 2em;
+    color: #FF0000;
+}
+
+.buy-btn {
+    display:block;
+    margin-top: 10px;
+    width:100%;
+    height:60px;
+    color: #ffffff;
+    background-color: #FF8A00;
+    font-size: 1.4em;
+    border:none;
+}
+
+/* finish page -------------------------------------------- */
+
+.finish-msg{
+    height:60px;
+    font-size: 1.4em;
+    text-align: center;
+    line-height:60px;
+    background-color: #FFF2DC;
+}
+
+.finish-item-price {
+    position: absolute;
+    margin-left: 800px;
+}
+
+/* login/regist page ------------------------------------ */
+div .login_form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 360px;
+}
+div .login_form dl {
+	margin-top: 20px;
+	width:360px;
+}
+div .login_form dt {
+	margin-top: 5px;
+	padding-top: 6px;
+	float:left;
+	clear:left;
+	width:120px;
+}
+div .login_form dd {
+	margin-top: 5px;
+	padding-top: 3px;
+	float:left;
+	width: 240px;
+}
+div .login_form input[type="text"] {
+	width: 240px;
+}
+div .login_error {
+	padding-top: 10px;
+	text-align: center;
+	color: #f00;
+	font-weight: bold;
+}
+div .login_submit {
+	clear: both;
+	padding-top: 10px;
+	text-align: center;
+}
+/* exhibit page ------------------------------------ */
+
+.exhibit_header {
+  height: 80px;
+  font-size: 24px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: -webkit-flex;
+ display: flex;
+ -webkit-align-items: center;
+ align-items: center;
+ -webkit-justify-content: center;
+ justify-content: center;
+}
+
+.exhibit_img {
+  height: 400px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: -webkit-flex;
+ display: flex;
+ -webkit-align-items: center;
+ align-items: center;
+ -webkit-justify-content: center;
+ justify-content: center;
+
+}
+
+div#drag-drop-area {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+   border: 2px dashed rgb(204, 204, 204);
+
+}
+
+.exhibit_name {
+  height: 100px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: -webkit-flex;
+ display: flex;
+ -webkit-align-items: center;
+ align-items: center;
+ -webkit-justify-content: center;
+ justify-content: center;
+}
+
+div .exhibit_form input[type="text"] {
+  width: 800px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.exhibit_department {
+  height: 100px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+select {
+  width: 800px;
+  height: 50px;
+}
+
+.exhibit_price {
+  height: 100px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.exhibit_stock {
+  height: 100px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.exhibit_submit {
+  height: 100px;
+  border-bottom: 0.1px solid rgb(204, 204, 204);
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+div .exhibit_form input[type="submit"] {
+  width: 600px;
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(224, 169, 75);
+  height: 60px;
+  border: none;
+}
+.exhibit_item {
+  width: 200px;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
